@@ -1,0 +1,12 @@
+Rentaly 1.0.4
+New improvements for RTL mode
+fixes for some issue with RTL mode
+
+Rentaly 1.0.3
+New improvements for RTL mode
+
+Rentaly 1.0.2
+New added Homepage 7 (index-7.html)
+
+Rentaly 1.0.1
+New added 12 custom preloader
