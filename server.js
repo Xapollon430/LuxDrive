@@ -1,6 +1,8 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+const path = require("path");
+
 require("dotenv").config();
 
 const app = express();
@@ -83,6 +85,12 @@ app.post("/send-dropoff-email", async (req, res) => {
     console.error("Error sending drop-off email:", error);
     res.status(500).json({ error: "Error sending drop-off email" });
   }
+});
+
+app.use(express.static(path.resolve(__dirname, "./luxdrive")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve("./luxdrive"));
 });
 
 app.listen(port, () => {
