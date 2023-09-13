@@ -18498,3 +18498,9 @@ img {
 #section-call-to-action{
     background-color: green !important; 
 }
+
+.board {
+    width: 400px; /* You can set the dimensions to whatever you want */
+    height: 400px;
+    object-fit: cover;
+}
