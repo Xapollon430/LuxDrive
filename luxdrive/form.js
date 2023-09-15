@@ -39,7 +39,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "http://localhost:3000/send-email",
+      url: "https://lux-drive-gamma.vercel.app/send-email",
       data: $form.serialize(),
       success: after_form_submitted,
       dataType: "json",

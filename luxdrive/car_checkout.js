@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     formDataObject.CarName = carNameElement.textContent; // Add this line
 
     // Send a POST request to localhost:3000
-    fetch("http://localhost:3000/send-dropoff-email", {
+    fetch("https://lux-drive-gamma.vercel.app/send-dropoff-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Set the content type to JSON
