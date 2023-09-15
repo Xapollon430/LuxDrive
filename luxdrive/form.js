@@ -1,6 +1,7 @@
 $(function () {
   function after_form_submitted(data) {
-    if (data.result == "success") {
+    console.log(data);
+    if (data.message == "Email sent successfully") {
       $("#success_message").show();
       $("#error_message").hide();
     } else {

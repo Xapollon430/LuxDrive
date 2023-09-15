@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Handle the response here (e.g., show success or error message)
         console.log(data);
         // You can add more code here to handle the response as needed
+
+        // Reset the form
+        contactForm.reset();
       })
       .catch((error) => {
         console.error("Error:", error);
